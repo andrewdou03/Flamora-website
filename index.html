@@ -18,7 +18,7 @@
 		<!-- <a href="solutions.html" class="hover:text-primary font-inter">Solutions</a> -->
 		<a href="portfolio.html" class="hover:text-primary font-inter">Our Work</a>
 	</div>
-	<div class="relative overflow-hidden" id="wrapper">
+	<div class="relative overflow-x-hidden" id="wrapper">
 		<nav class="flex justify-between items-center px-4 max-w-full  h-[64px]">
 			<div class="font-main text-2xl text-primary px-4">flamora</div>
 		
@@ -56,7 +56,7 @@
 				<h1 class="text-heading leading-tight">Websites That Tell Your Brand's Story</h1>
 				<p class="text-body font-inter leading-loose">Get right what most businesses get wrong.</p>
 				<div class="flex flex-col md:flex-row gap-4 md:gap-2 w-full">
-					<a href="#contact" class="px-4 py-4 md:py-[12px] md:px-[24px] bg-secondary rounded-md text-black font-inter hover:scale-95 inline-block">
+					<a href="portfolio.html" class="px-4 py-4 md:py-[12px] md:px-[24px] bg-secondary rounded-md text-black font-inter hover:scale-95 inline-block">
 						Portfolio
 					</a>
 					<a href="#contact" class="px-4 py-4 md:py-[12px] md:px-[24px] bg-primary rounded-md text-black font-inter hover:scale-95 inline-block">
@@ -136,11 +136,16 @@
 		<section id="contact" class="h-[550px] flex-col items-center md:justify-start px-16 md:mt-0 mt-20 pt-10">
 			<h2 class="text-subhead text-center md:text-left">Contact Us</h2>
 			<form action="https://formsubmit.co/andrew.dou2003@gmail.com" method="POST" class="flex flex-col gap-4 w-full font-inter">
-				<input type="text" placeholder="Name" class="input bg-black bg-transparent border-b border-white  px-1 py-2 focus:outline-none focus:border-secondary" required/>
-				<input type="email" placeholder="Email" class="input bg-black bg-transparent border-b border-white  px-1 py-2 focus:outline-none focus:border-secondary" required/>
+				<input type="text" name="_honey" class="hidden"/> 
+				<input type="hidden" name="_captcha" value="false"/>
+				<input type="hidden" name="_next" value="http://127.0.0.1:5500/Flamora/Website/dist/success.html"/>
+				<input type="text" placeholder="Name"
+				name="name" class="input bg-black bg-transparent border-b border-white  px-1 py-2 focus:outline-none focus:border-secondary" required/>
+				<input type="email" placeholder="Email"
+				name="email" class="input bg-black bg-transparent border-b border-white  px-1 py-2 focus:outline-none focus:border-secondary" required/>
 				<input type="text" placeholder="Subject" class="input bg-black bg-transparent border-b border-white  px-1 py-2 focus:outline-none focus:border-secondary"/>
-				<textarea name="" id="" cols="30" rows="5" placeholder="Message" class="input bg-black bg-transparent border border-white  px-1 py-2 rounded-md focus:outline-none focus:border-secondary"></textarea>
-				<button class="px-4 py-4 md:py-[12px] md:px-[24px] bg-primary  rounded-md text-black font-inter hover:scale-95">Submit</button>
+				<textarea name="comments" id="" cols="30" rows="5" placeholder="Message" class="input bg-black bg-transparent border border-white  px-1 py-2 rounded-md focus:outline-none focus:border-secondary"></textarea>
+				<button class="px-4 py-4 md:py-[12px] md:px-[24px] bg-primary  rounded-md text-black font-inter hover:scale-95" type="submit">Submit</button>
 		</section>
 		<div class="md:hidden flameContainer absolute top-[3400px] left-[-40%] md:right-32 md:left-auto md:opacity-80 opacity-25">
 			<div class="red flame"></div>
