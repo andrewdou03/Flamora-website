@@ -600,8 +600,16 @@ video {
   bottom: 0px;
 }
 
+.bottom-2 {
+  bottom: 0.5rem;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.left-4 {
+  left: 1rem;
 }
 
 .left-\[-40\%\] {
@@ -610,6 +618,10 @@ video {
 
 .left-\[-50\%\] {
   left: -50%;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .right-\[-45\%\] {
@@ -640,28 +652,12 @@ video {
   top: 425px;
 }
 
-.bottom-2 {
-  bottom: 0.5rem;
-}
-
-.left-4 {
-  left: 1rem;
-}
-
-.right-0 {
-  right: 0px;
-}
-
 .z-10 {
   z-index: 10;
 }
 
 .z-40 {
   z-index: 40;
-}
-
-.-z-40 {
-  z-index: -40;
 }
 
 .mx-auto {
@@ -672,6 +668,11 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .mt-20 {
@@ -714,6 +715,10 @@ video {
   height: 800px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -726,12 +731,20 @@ video {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-full {
   max-width: 100%;
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+.max-w-10 {
+  max-width: 2.5rem;
+}
+
+.max-w-1 {
+  max-width: 0.25rem;
 }
 
 .flex-col {
@@ -762,10 +775,6 @@ video {
   gap: 1.5rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -782,6 +791,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -925,6 +938,11 @@ video {
   font-family: Space Grotesk, sans-serif;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -952,30 +970,12 @@ video {
   line-height: 1.75rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
 .font-thin {
   font-weight: 100;
 }
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .leading-loose {
@@ -1012,6 +1012,11 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+*{
+  margin:0;
+  padding: 0;
 }
 
 body.lock-scroll{
@@ -1316,10 +1321,6 @@ body.lock-scroll{
     top: 16rem;
   }
 
-  .md\:right-\[-45\%\] {
-    right: -45%;
-  }
-
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -1330,10 +1331,6 @@ body.lock-scroll{
 
   .md\:flex {
     display: flex;
-  }
-
-  .md\:grid {
-    display: grid;
   }
 
   .md\:hidden {
